@@ -1,0 +1,21 @@
+{
+  "session": {
+    "id": "vinyl-wave-dev",
+    "workingDirectory": "C:\\workspaces\\vinyl_wave",
+    "model": "auto"
+  },
+  "permissions": {
+    "allowed": [
+      "shell",
+      "read",
+      "write",
+      "edit",
+      "glob",
+      "grep",
+      "generate_image"
+    ]
+  },
+  "features": {
+    "ponytail": "full"
+  }
+}
