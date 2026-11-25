@@ -1,0 +1,84 @@
+/* PlayerOverlay - YouTube IFrame Player 스타일 */
+.youtube-player-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.youtube-player-overlay iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Player가 준비되었을 때 투명도 처리 */
+.youtube-player-overlay.ready {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* SoundCloud Widget Container */
+.soundcloud-player-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.soundcloud-player-overlay.ready {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.soundcloud-player-overlay iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Player 컨트롤 오버레이 */
+.player-controls-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.player-progress-container {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.player-progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.1s;
+}
+
+.player-time-display {
+  font-size: 12px;
+  color: var(--text);
+  min-width: 80px;
+  text-align: center;
+}

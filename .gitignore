@@ -1,7 +1,28 @@
+# 환경 변수
 .env
-.env.*
-!.env.example
-node_modules/
-dist/
+.env.local
+.env.*.local
+
+# Vite 빌드 산출물
+/dist
+/.vite
+
+# Node.js 의존성
+/node_modules
+/.pnpm-store
+
+# IDE 및 OS
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
-Thumbs.db
+
+# 프로젝트 특이 파일
+*.log
+.env*
+
+# 테스트 및 분석
+coverage/
+*.test.ts
+*.test.tsx

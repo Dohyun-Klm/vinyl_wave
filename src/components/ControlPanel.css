@@ -8,13 +8,6 @@
   gap: 20px;
 }
 
-.playback-controls {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-}
-
 .playback-btn, .skip-btn {
   cursor: not-allowed;
   opacity: 0.6;
@@ -73,14 +66,26 @@
   font-weight: 300;
 }
 
-.playback-btn::after {
+.playback-btn::after,
+.skip-btn::after {
   content: '목업';
   font-size: 10px;
 }
 
-.skip-btn::after {
-  content: '목업';
-  font-size: 8px;
+/* Platform selector active styles */
+.platform-btn.active {
+  opacity: 1;
+  cursor: pointer;
+  background: var(--accent-bg);
+}
+
+.platform-btn.active:hover {
+  opacity: 1;
+  background: var(--accent-bg-alt);
+}
+
+.platform-btn.active::after {
+  content: none;
 }
 
 .search-area {
